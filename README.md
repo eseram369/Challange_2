@@ -8,8 +8,8 @@ The data gives the two tables for 2017 and 2018 with stock information on 12 dif
 #### Result
 ##### Analysis
 
-1a) Create a ticker Index
-    Dim tickerIndex As Long
+    1a) Create a ticker Index
+     Dim tickerIndex As Long
     
     tickerIndex = 0
     
@@ -23,8 +23,8 @@ The data gives the two tables for 2017 and 2018 with stock information on 12 dif
         tickerVolumes(i) = 0
     Next i
     
-   ''2b) Loop over all the rows in the spreadsheet.
-    For i = 2 To RowCount
+    ''2b) Loop over all the rows in the spreadsheet.
+     For i = 2 To RowCount
         
         '3a) Increase volume for current ticker
         tickerVolumes(tickerIndex) = tickerVolumes(tickerIndex) + Cells(i, "H").Value
@@ -58,7 +58,7 @@ The data gives the two tables for 2017 and 2018 with stock information on 12 dif
     
     
     
-    ####  Result 
+  ####  Result 
       
     
    ![VBA_Challenge_2017 png](https://user-images.githubusercontent.com/90746609/135791201-e850b080-9d26-4e86-b654-7d3e352f0bb2.jpg)
